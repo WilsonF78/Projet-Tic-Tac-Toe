@@ -1,0 +1,20 @@
+body{
+    
+}
+#grille {
+    margin-top: 10%;
+   display: flex;
+   justify-content: center;
+   
+  
+}
+
+.case{
+    border: 1px solid rgb(118, 181, 45);
+    height: 100px;
+    width: 100px;
+   
+    
+    
+    
+}
