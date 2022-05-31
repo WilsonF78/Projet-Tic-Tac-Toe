@@ -28,8 +28,9 @@ let cAll = [c1, c2, c3, c4, c5, c6, c7, c8, c9]
 for (let i = 0; i < cAll.length; i++) {
     cAll[i].addEventListener("click", () =>
     {
-        console.log("Coucous")
+        console.log([i]);
     })
 
 }
+
 

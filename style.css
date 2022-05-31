@@ -1,20 +1,41 @@
 body{
-    
+    justify-content: center;
+    text-align: center;
 }
+
 #grille {
     margin-top: 10%;
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
+
    
   
 }
 
 .case{
-    border: 1px solid rgb(118, 181, 45);
+    border: 2px solid rgb(118, 181, 45);
     height: 100px;
     width: 100px;
-   
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
     
     
+} 
+
+.restartButton{
     
 }
+
+
+
+
+
+
+
+
+
+
