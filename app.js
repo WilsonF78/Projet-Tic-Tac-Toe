@@ -19,11 +19,15 @@ let c7 = document.getElementById("c7")
 let c8 = document.getElementById("c8")
 let c9 = document.getElementById("c9")
 
+
 let cAll = [c1, c2, c3, c4, c5, c6, c7, c8, c9]
 
 let joueurActif = "X"
 let joueurOne = "X"
 let joueurTwo = "O"
+let restartButton = document.getElementById('restartButton')
+
+
 
 
 //j'attribue un clique au C1 que j 'ai recuperé
@@ -37,35 +41,59 @@ let joueurTwo = "O"
 for (let i = 0; i < cAll.length; i++) {
     cAll[i].addEventListener("click", () =>
     {
-        cAll[i].innerHTML = joueurActif
-        if (joueurActif == joueurOne) {
-            joueurActif = joueurTwo
+        // tu viens de cliquer sur la case i
+        //
+        // 1. la case est vide => mettre un x ou un o
+        // 2. la case contient un x => rien
+        // 3. la case contient un o => rien
 
-        } else {
-            joueurActif = joueurOne
+        // if (cAll[i].innerHTML === "") {
+        //     console.log("test")
+        //     (cAll[i].innerHTML = joueurOne)
 
+
+
+
+        //     // rajouter un O ou un X
+
+
+        // } else {
+        //     console.log("non vide");
+
+        //     // RIEN
+        // }
+
+
+
+
+        // 1.
+        // si la case est vide => console.log('vide')
+        // sinon, console.log('pas vide')
+
+
+        if (cAll[i].innerHTML === "") {
+            cAll[i].innerHTML = joueurActif
+            if (joueurActif == joueurOne) {
+                joueurActif = joueurTwo
+
+            } else {
+                joueurActif = joueurOne
+
+            }
         }
 
-        console.log(joueurOne);
+
+
+        ///////////////////////////////////////////
+        // si i = test ou i = a joueur actif 
+        //retusn 
+
+        // if ([i] == "" || [i] == joueurActif) {
+        //     return
+        // }
+
+
+
     })
-
 }
-// ///////////////////////////////////////////////////
-
-// function clickCase()
-// {
-//     const indexcase = parseInt(this.dataset.index)
-//     console.log(i);
-// }
-
-// cAll = cAll.map(x => parseInt(x))
-
-// console.log(cAll);  // NAN
-
-///////////////////////////////////////////////////
-
-
-
-// mon clique renvoie une alerte
-//c1.onclick = () => { alert("O"); };
 

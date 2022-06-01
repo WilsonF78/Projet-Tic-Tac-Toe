@@ -26,11 +26,14 @@ body{
     
 } 
 
-.restartButton{
+
+
+#c1{
     
+    transform: translateY(-10px);
+    transform: translateZ(-10px);
+
 }
-
-
 
 
 
