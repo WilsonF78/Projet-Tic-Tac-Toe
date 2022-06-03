@@ -26,7 +26,8 @@ let joueurActif = "X"
 let joueurOne = "X"
 let joueurTwo = "O"
 let restartButton = document.getElementById('restartButton')
-
+let resetGame = document.getElementById('reset-game');
+let winner = "Win"
 
 
 
@@ -51,7 +52,16 @@ for (let i = 0; i < cAll.length; i++) {
         //     console.log("test")
         //     (cAll[i].innerHTML = joueurOne)
 
+        if (cAll[i].innerHTML === "") {
+            cAll[i].innerHTML = joueurActif
+            if (joueurActif == joueurOne) {
+                joueurActif = joueurTwo
 
+            } else {
+                joueurActif = joueurOne
+
+            }
+        }
 
 
         //     // rajouter un O ou un X
@@ -71,16 +81,7 @@ for (let i = 0; i < cAll.length; i++) {
         // sinon, console.log('pas vide')
 
 
-        if (cAll[i].innerHTML === "") {
-            cAll[i].innerHTML = joueurActif
-            if (joueurActif == joueurOne) {
-                joueurActif = joueurTwo
 
-            } else {
-                joueurActif = joueurOne
-
-            }
-        }
 
 
 
@@ -96,4 +97,5 @@ for (let i = 0; i < cAll.length; i++) {
 
     })
 }
+
 
