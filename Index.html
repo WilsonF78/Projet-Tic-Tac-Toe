@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div>Player 1</div>
-    <div>Player 2</div>
-
+    <div class="" id="win"></div>
+    <div class="player1">Player 1 X</div>
+    <div class="player2">Player 2 O</div>
     <div id="grille">
       <div class="colonne1">
         <div class="case" id="c1"></div>
@@ -26,13 +26,15 @@
         <div class="case" id="c7"></div>
         <div class="case" id="c8"></div>
         <div class="case" id="c9"></div>
+        <h2></h2>
       </div>
-      <input
-        type="button"
-        onclick="window.location.reload(false)"
-        value="Rafraichir"
-      />
     </div>
+    <input
+      type="button"
+      onclick="window.location.reload(false)"
+      value="Refresh"
+    />
+    <div></div>
     <script src="/app.js"></script>
   </body>
 </html>
