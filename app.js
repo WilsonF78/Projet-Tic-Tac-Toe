@@ -98,3 +98,6 @@ function victoireJ2()
 {
     window.alert("Victoir du joueur 2");
 }
+
+
+////zojougdioqugdiyd////
