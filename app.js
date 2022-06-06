@@ -28,18 +28,23 @@ let joueurTwo = "O"
 let joueurActif = joueurOne
 let win = document.getElementById("win")
 let resetGame = document.getElementById('reset-game');
+const audio = document.querySelector('audio');
 
 
 for (let i = 0; i < cAll.length; i++) {
     cAll[i].addEventListener("click", () =>
     {
-
         //
         // mettre alternativement une x/o
         // change le joueur actif
         //
 
         if (cAll[i].innerHTML === "") {
+
+
+            audio.currentTime = 0;
+            audio.play();
+
             cAll[i].innerHTML = joueurActif
             if (joueurActif == joueurOne) {
                 joueurActif = joueurTwo
