@@ -29,6 +29,8 @@ let joueurActif = joueurOne
 let win = document.getElementById("win")
 let resetGame = document.getElementById('reset-game');
 let audio = document.querySelector('audio');
+let winSound = document.querySelector("#winsound")
+
 
 
 for (let i = 0; i < cAll.length; i++) {
@@ -83,6 +85,8 @@ function checkVictoir()
 
         victoireJ2()
 
+
+
 }
 
 // [1]  [2]  [3]
@@ -93,14 +97,22 @@ function checkVictoir()
 
 function victoireJ1()
 {
+    winSound.currentTime = 0;
+    winSound.play();
+
     console.log(document.getElementById("winplayer").innerHTML = "Player 1 Win");
 }
 
 
 function victoireJ2()
 {
+    winSound.currentTime = 0;
+    winSound.play();
+
     console.log(document.getElementById("winplayer").innerHTML = "Player 2 Win");
 }
+
+
 
 
 ////zojougdioqugdiyd////
