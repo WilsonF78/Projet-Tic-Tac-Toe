@@ -19,6 +19,14 @@ body{
     
 }
 
+
+
+.case:hover {
+	background:#1a6d62 ;
+   
+}
+
+
 .case{
     border: 2px solid rgb(7, 8, 5);
     height: 100px;
@@ -32,16 +40,55 @@ body{
     background-color: rgb(220, 228, 225);
     transition: background-color .5s;  
     font-size: 70px;
+    
 
 } 
 
 
 #c1{
     
-    transform: translateY(-10px);
-    transform: translateZ(-10px);
-
+    
+    transform: translateY(-5px); 
 }
+
+#c3{
+    
+    
+    transform: translateY(5px); 
+}
+
+#c4{
+    
+    
+    transform: translateY(-5px); 
+}
+
+#c6{
+    
+    
+    transform: translateY(5px); 
+}
+
+#c7{
+    
+    
+    transform: translateY(-5px); 
+}
+
+#c9{
+    
+    
+    transform: translateY(5px); 
+}
+
+.colonne1{
+    transform: translateX(-5px);
+}
+
+.colonne3{
+    transform: translateX(5px);
+}
+
 
 input{
     background-color: aqua;
@@ -49,6 +96,7 @@ input{
     height: 50px;
     border-radius: 50px;
     font-size: 40px;
+    margin-top: 15px;
 }
 
 .player1{

@@ -24,6 +24,7 @@ let c9 = document.getElementById("c9")
 let cAll = [c1, c2, c3, c4, c5, c6, c7, c8, c9]
 
 let joueurOne = "X"
+
 let joueurTwo = "O"
 let joueurActif = joueurOne
 let win = document.getElementById("win")
@@ -40,7 +41,6 @@ for (let i = 0; i < cAll.length; i++) {
         //
 
         if (cAll[i].innerHTML === "") {
-
 
             audio.currentTime = 0;
             audio.play();
