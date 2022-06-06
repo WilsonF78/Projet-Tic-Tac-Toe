@@ -24,12 +24,11 @@ let c9 = document.getElementById("c9")
 let cAll = [c1, c2, c3, c4, c5, c6, c7, c8, c9]
 
 let joueurOne = "X"
-
 let joueurTwo = "O"
 let joueurActif = joueurOne
 let win = document.getElementById("win")
 let resetGame = document.getElementById('reset-game');
-const audio = document.querySelector('audio');
+let audio = document.querySelector('audio');
 
 
 for (let i = 0; i < cAll.length; i++) {
@@ -61,26 +60,26 @@ for (let i = 0; i < cAll.length; i++) {
 
 function checkVictoir()
 {
-    if ((joueurOne == c1.innerHTML && c1.innerHTML == c2.innerHTML && c2.innerHTML == c3.innerHTML) ||
-        (joueurOne == c4.innerHTML && c4.innerHTML == c5.innerHTML && c5.innerHTML == c6.innerHTML) ||
-        (joueurOne == c7.innerHTML && c7.innerHTML == c8.innerHTML && c8.innerHTML == c9.innerHTML) ||
-        (joueurOne == c1.innerHTML && c1.innerHTML == c4.innerHTML && c4.innerHTML == c7.innerHTML) ||
-        (joueurOne == c2.innerHTML && c2.innerHTML == c5.innerHTML && c5.innerHTML == c8.innerHTML) ||
-        (joueurOne == c3.innerHTML && c3.innerHTML == c6.innerHTML && c6.innerHTML == c9.innerHTML) ||
-        (joueurOne == c1.innerHTML && c1.innerHTML == c5.innerHTML && c5.innerHTML == c9.innerHTML) ||
-        (joueurOne == c7.innerHTML && c7.innerHTML == c5.innerHTML && c5.innerHTML == c3.innerHTML)) {
+    if ((joueurOne === c1.innerHTML && c1.innerHTML === c2.innerHTML && c2.innerHTML === c3.innerHTML) ||
+        (joueurOne === c4.innerHTML && c4.innerHTML === c5.innerHTML && c5.innerHTML === c6.innerHTML) ||
+        (joueurOne === c7.innerHTML && c7.innerHTML === c8.innerHTML && c8.innerHTML === c9.innerHTML) ||
+        (joueurOne === c1.innerHTML && c1.innerHTML === c4.innerHTML && c4.innerHTML === c7.innerHTML) ||
+        (joueurOne === c2.innerHTML && c2.innerHTML === c5.innerHTML && c5.innerHTML === c8.innerHTML) ||
+        (joueurOne === c3.innerHTML && c3.innerHTML === c6.innerHTML && c6.innerHTML === c9.innerHTML) ||
+        (joueurOne === c1.innerHTML && c1.innerHTML === c5.innerHTML && c5.innerHTML === c9.innerHTML) ||
+        (joueurOne === c7.innerHTML && c7.innerHTML === c5.innerHTML && c5.innerHTML === c3.innerHTML)) {
 
         victoireJ1()
 
     } if (
-        (joueurTwo == c1.innerHTML && c1.innerHTML == c2.innerHTML && c2.innerHTML == c3.innerHTML) ||
-        (joueurTwo == c4.innerHTML && c4.innerHTML == c5.innerHTML && c5.innerHTML == c6.innerHTML) ||
-        (joueurTwo == c7.innerHTML && c7.innerHTML == c8.innerHTML && c8.innerHTML == c9.innerHTML) ||
-        (joueurTwo == c1.innerHTML && c1.innerHTML == c4.innerHTML && c4.innerHTML == c7.innerHTML) ||
-        (joueurTwo == c2.innerHTML && c2.innerHTML == c5.innerHTML && c5.innerHTML == c8.innerHTML) ||
-        (joueurTwo == c3.innerHTML && c3.innerHTML == c6.innerHTML && c6.innerHTML == c9.innerHTML) ||
-        (joueurTwo == c1.innerHTML && c1.innerHTML == c5.innerHTML && c5.innerHTML == c9.innerHTML) ||
-        (joueurTwo == c7.innerHTML && c7.innerHTML == c5.innerHTML && c5.innerHTML == c3.innerHTML))
+        (joueurTwo === c1.innerHTML && c1.innerHTML === c2.innerHTML && c2.innerHTML === c3.innerHTML) ||
+        (joueurTwo === c4.innerHTML && c4.innerHTML === c5.innerHTML && c5.innerHTML === c6.innerHTML) ||
+        (joueurTwo === c7.innerHTML && c7.innerHTML === c8.innerHTML && c8.innerHTML === c9.innerHTML) ||
+        (joueurTwo === c1.innerHTML && c1.innerHTML === c4.innerHTML && c4.innerHTML === c7.innerHTML) ||
+        (joueurTwo === c2.innerHTML && c2.innerHTML === c5.innerHTML && c5.innerHTML === c8.innerHTML) ||
+        (joueurTwo === c3.innerHTML && c3.innerHTML === c6.innerHTML && c6.innerHTML === c9.innerHTML) ||
+        (joueurTwo === c1.innerHTML && c1.innerHTML === c5.innerHTML && c5.innerHTML === c9.innerHTML) ||
+        (joueurTwo === c7.innerHTML && c7.innerHTML === c5.innerHTML && c5.innerHTML === c3.innerHTML))
 
         victoireJ2()
 
