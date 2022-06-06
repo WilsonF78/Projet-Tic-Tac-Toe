@@ -67,7 +67,7 @@ function checkVictoir()
 
         victoireJ1()
 
-    } else if (
+    } if (
         (joueurTwo == c1.innerHTML && c1.innerHTML == c2.innerHTML && c2.innerHTML == c3.innerHTML) ||
         (joueurTwo == c4.innerHTML && c4.innerHTML == c5.innerHTML && c5.innerHTML == c6.innerHTML) ||
         (joueurTwo == c7.innerHTML && c7.innerHTML == c8.innerHTML && c8.innerHTML == c9.innerHTML) ||
@@ -81,7 +81,6 @@ function checkVictoir()
 
 }
 
-
 // [1]  [2]  [3]
 
 // [4]  [5]  [6]
@@ -90,13 +89,13 @@ function checkVictoir()
 
 function victoireJ1()
 {
-    window.alert("Victoir du joueur 1");
+    console.log(document.getElementById("winplayer").innerHTML = "Player 1 Win");
 }
 
 
 function victoireJ2()
 {
-    window.alert("Victoir du joueur 2");
+    console.log(document.getElementById("winplayer").innerHTML = "Player 2 Win");
 }
 
 
