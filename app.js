@@ -23,6 +23,7 @@ let win = document.getElementById("win")
 let clickBtn = document.getElementById("clickBtn");
 let winSound = document.getElementById("winSound")
 let resetBtn = document.getElementById("resetBtn")
+
 let fontSound = document.getElementById("fontSound")
 fontSound.play();
 
