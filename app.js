@@ -68,10 +68,7 @@ function resetBoard()
     resetBtn.currentTime = 0;
     resetBtn.play();
     document.getElementById("winplayer").innerHTML = "";
-
-
 }
-
 
 function checkvictory()
 {
