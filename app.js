@@ -18,7 +18,7 @@ let joueurOne = "X"
 let joueurTwo = "O"
 let joueurActif = joueurOne
 let win = document.getElementById("win")
-let resetGame = document.getElementById('reset-game');
+
 let audio = document.querySelector('audio');
 let winSound = document.querySelector("#winsound")
 
@@ -57,6 +57,18 @@ for (let i = 0; i < cAll.length; i++) {
 }
 
 
+function resetBoard()
+{
+    let elements = document.getElementsByClassName("case");
+
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].innerHTML = "";
+
+
+    }
+    document.getElementById("winplayer").innerHTML = "";
+
+}
 
 
 function checkVictoir()
@@ -112,5 +124,4 @@ function victoireJ2()
 
     console.log(document.getElementById("winplayer").innerHTML = "Player 2 Win");
 }
-
 

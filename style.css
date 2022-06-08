@@ -120,3 +120,12 @@ h2{
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+.BtnReset{
+    cursor: pointer;
+}
+
+.BtnReset:hover {
+	background:#1a6d6273 ;
+   
+}
