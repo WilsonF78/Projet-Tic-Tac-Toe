@@ -21,13 +21,13 @@ body{
 
 
 
-.case:hover {
+.box:hover {
 	background:#1a6d6273 ;
    
 }
 
 
-.case{
+.box{
     border: 2px solid rgb(7, 8, 5);
     height: 100px;
     width: 100px;
@@ -45,47 +45,47 @@ body{
 } 
 
 
-#c1{
+#box1{
     
     
     transform: translateY(-5px); 
 }
 
-#c3{
+#box3{
     
     
     transform: translateY(5px); 
 }
 
-#c4{
+#box4{
     
     
     transform: translateY(-5px); 
 }
 
-#c6{
+#box6{
     
     
     transform: translateY(5px); 
 }
 
-#c7{
+#box7{
     
     
     transform: translateY(-5px); 
 }
 
-#c9{
+#box9{
     
     
     transform: translateY(5px); 
 }
 
-.colonne1{
+.colum1{
     transform: translateX(-5px);
 }
 
-.colonne3{
+.colum3{
     transform: translateX(5px);
 }
 
