@@ -1,13 +1,4 @@
-//
-// 1. mettre un ecouteur "click" sur chq case
-// 2.
-//
-
-// 1. place un ecouter sur la case c1: qd clickee => console.log "c1 vient d'etre cliquee"
-
-//1 je recupere mes element a cliquer
-
-// ///////////////////////////////////////////////////
+/////////////////////////////////////////////////////
 
 let c1 = document.getElementById("c1")
 let c2 = document.getElementById("c2")
@@ -20,8 +11,8 @@ let c8 = document.getElementById("c8")
 let c9 = document.getElementById("c9")
 
 
-
 let cAll = [c1, c2, c3, c4, c5, c6, c7, c8, c9]
+
 
 let joueurOne = "X"
 let joueurTwo = "O"
@@ -32,6 +23,8 @@ let audio = document.querySelector('audio');
 let winSound = document.querySelector("#winsound")
 
 
+let fontSound = document.getElementById("fontSound")
+fontSound.play();
 
 for (let i = 0; i < cAll.length; i++) {
     cAll[i].addEventListener("click", () =>
@@ -49,14 +42,20 @@ for (let i = 0; i < cAll.length; i++) {
             cAll[i].innerHTML = joueurActif
             if (joueurActif == joueurOne) {
                 joueurActif = joueurTwo
+
+                console.log(document.getElementById("winplayer").innerHTML = "O Next");
+
             } else {
                 joueurActif = joueurOne
+
+                console.log(document.getElementById("winplayer").innerHTML = "X Next");
             }
 
             checkVictoir()
         }
     })
 }
+
 
 
 
@@ -87,6 +86,8 @@ function checkVictoir()
 
 
 
+
+
 }
 
 // [1]  [2]  [3]
@@ -113,6 +114,3 @@ function victoireJ2()
 }
 
 
-
-
-////zojougdioqugdiyd////
