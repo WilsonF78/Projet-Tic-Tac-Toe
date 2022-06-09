@@ -1,4 +1,4 @@
-/////////////////////////////////////////////////////
+/////////////Variable/////////////
 
 let box1 = document.getElementById("box1")
 let box2 = document.getElementById("box2")
@@ -27,7 +27,7 @@ let resetBtn = document.getElementById("resetBtn")
 let fontSound = document.getElementById("fontSound")
 fontSound.play();
 
-///////////////////////////////
+//////////////////////////
 
 for (let i = 0; i < allBox.length; i++) {
     allBox[i].addEventListener("click", () =>
@@ -55,13 +55,14 @@ for (let i = 0; i < allBox.length; i++) {
     })
 }
 
+/////////////Btn reset/////////////
 
 function resetBoard()
 {
-    let elements = document.getElementsByClassName("box");
+    let resetGame = document.getElementsByClassName("box");
 
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].innerHTML = "";
+    for (let i = 0; i < resetGame.length; i++) {
+        resetGame[i].innerHTML = "";
 
 
     }
@@ -69,6 +70,8 @@ function resetBoard()
     resetBtn.play();
     document.getElementById("winplayer").innerHTML = "";
 }
+
+/////////////Victory check/////////////
 
 function checkvictory()
 {
@@ -95,6 +98,8 @@ function checkvictory()
 
         victoryJ2()
 }
+
+/////////////Victory msg/////////////
 
 function victoryJ1()
 {
