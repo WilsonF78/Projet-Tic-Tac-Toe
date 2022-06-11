@@ -5,7 +5,7 @@ body{
     justify-content: center;
     text-align: center;
     background-color: red;
-    background: url(/image/Scene-24.jpg) no-repeat;
+    background: url("image/Scene-24.jpg") no-repeat;
     background-size: cover;
     font-family: 'Finger Paint', cursive;
     min-height:100vh;
